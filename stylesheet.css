@@ -1,0 +1,15 @@
+body{
+      background-color: #33cccc;
+      font-family:"Trebuchet MS","Helvetica","Verdana",sans-serif;
+
+    }
+
+h1{
+      color: #f9fafc;
+
+    }
+
+a:link {
+    color:red;
+    font-size:50%;
+}
