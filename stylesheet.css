@@ -1,15 +1,153 @@
 body{
-      background-color: #33cccc;
       font-family:"Trebuchet MS","Helvetica","Verdana",sans-serif;
+      line-height:1,7em;
+      color: #555555;
+      font-size: 90%;
+      width:960px;
+      margin: auto;
+      position: relative;
+
+
+    }
+header {
+    color: #993399;
+    line-height:1em;
+}
+
+.adres {
+    float: right;
+    text-align:right;
+    width:30%;
+    margin: 5;
+    padding: 0;
+    animation-name:sizer;
+    animation-duration: 5s;
+    animation-iteration-count:20s;
+    animation-timing-function:linear;
+
+}
+adres.clear {
+    clear:right;
+
+}
+
+.adres:hover {
+      background-color:#006699;
+      color: #FFFFFF;
+    }
+
+@keyframes sizer {
+    from, to {width:10rem; height:10rem;}
+    50% {width: 20rem; height: 20rem;}
+}
+
+.page-header {
+    display:none;
+    color: #999999;
+    line-height: normal
+}
+.logo {
+    float: left;
+}
+
+h2,h3 {
+    font-weight: normal;
+    font-family: serif;
 
     }
 
-h1{
-      color: #f9fafc;
+h2 {
+    color:#0000AD;
+    font-size: 1,75rem;
 
-    }
+}
+
+h3 {
+    color: #9C9CDE;
+    font-size:1,5rem;
+
+}
 
 a:link {
-    color:red;
-    font-size:50%;
+    color:#BBBBBB;
+    font-size:80%;
+    decoration:none;
 }
+
+.navigation {
+    color:#999999;
+    list-style-image:url("/Users/vdabcursist/images2/ornament.gif");
+    font-size: 150%;
+    font-family: serif;
+
+}
+
+.navigation.selected {
+    color: #0000ad;
+    list-style-image: url("/Users/vdabcursist/images2/ornament-current.gif");
+}
+
+.navigation.selected a:hover {
+    color: inherit;
+}
+
+.navigation a:hover {
+    color: #BBBBBB;
+
+}
+
+.navigation li {
+    border-top: 1px solid #999999;
+    padding: 5px 0 5px 0;
+
+}
+.navigation li: last-of-type {
+    border-bottom: 1px solid #999999;
+
+}
+head {
+        font-family:serif;
+}
+
+.copyright {
+    text-align: right;
+    font-size: 80%;
+    color: #999999;
+    }
+
+.makingYourDreams {
+    color:#993399 ;
+    font-style: italic;
+    font-size: 1.5em;
+    font-family: serif;
+    font-weight: bold;
+    position: absolute;
+}
+.makingYourDreams:hover {
+    animation-name:transformer;
+    animation-duration:5s;
+    animation-iteration-count:10s;
+    animation-timing-function: linear;
+
+}
+@keyframes rotate {
+    0% {transform:rotate(0deg)}
+    50%{border-radius:50%}
+    to {border-radius:0}
+}
+
+hr{
+    border:none;
+    height:10px;
+    background:url("/Users/vdabcursist/images2/footerline.gif") 100% 0 no-repeat;
+  }
+
+form ol {
+list-style: none;
+}
+
+fieldset legend {
+    color: #99C9CDE;
+    font-size: 120%;
+}
+
